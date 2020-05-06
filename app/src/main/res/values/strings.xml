@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ZalegoCourseApp</string>
+
+    <string name="txtSignIn">Sign In</string>
+    <string name="txtSignUp">Sign Up</string>
+    <string name="txtHaveNoAccount">Have No Account? Sign Up here</string>
+    <string name="txtHaveAnAccount">Already have an account? Sign In here</string>
+
+    <string name="edEmailAddress">Email Address</string>
+    <string name="edPassword">Password</string>
+    <string name="edConfirmPassword">Confirm Password</string>
+    <string name="edFirstName">First Name</string>
+    <string name="edMiddleName">Middle Name</string>
+    <string name="edSurname">Surname</string>
+
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnSignUp">Sign Up</string>
+
+</resources>
