@@ -54,6 +54,14 @@ public class SignInActivity extends AppCompatActivity {
 
     }
 
+    private void codeToStartCourseListActivity() {
+
+        Intent inStartCourseList = new Intent(SignInActivity.this, CourseListActivity.class);
+        this.startActivity(inStartCourseList);
+        this.finish();
+
+    }
+
 
     private View.OnClickListener clkSignIn = new View.OnClickListener() {
 
@@ -69,7 +77,11 @@ public class SignInActivity extends AppCompatActivity {
                     break;
 
                 case R.id.btnSignIn:
+
                     //  TODO: Sign In user here.
+
+                    codeToStartCourseListActivity();
+
                     break;
 
             }

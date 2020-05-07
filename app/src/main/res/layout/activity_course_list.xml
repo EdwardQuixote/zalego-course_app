@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conslayCourseList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_activity_top_bottom"
+    android:paddingLeft="@dimen/padding_activity_left_right"
+    android:paddingStart="@dimen/padding_activity_left_right"
+    android:paddingRight="@dimen/padding_activity_left_right"
+    android:paddingEnd="@dimen/padding_activity_left_right"
+    android:paddingBottom="@dimen/padding_activity_top_bottom"
+    tools:context=".CourseListActivity">
+
+    <RelativeLayout
+        android:id="@+id/relayCourseList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtCourseListLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCourseListLabel"
+            android:textSize="@dimen/textSize28"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCourseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/txtCourseListLabel"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCourseList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        android:contentDescription="@string/fabAddCourse"
+        app:fabSize="auto"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
